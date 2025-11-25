@@ -16,6 +16,32 @@
 			<TextBlock Text="Életkor:" Margin="0,10,0,0"/>
 			<TextBox x:Name="tbEletkor" Width="100"/>
 
-	
+			<TextBlock Text="Kedvenc műfaj:" Margin="0,10,0,0"/>
+			<ComboBox x:Name="cbMufaj" Width="200">
+				<ComboBoxItem Content="Regény"/>
+				<ComboBoxItem Content="Sci-fi"/>
+				<ComboBoxItem Content="Fantasy"/>
+				<ComboBoxItem Content="Ismeretterjesztő"/>
+				<ComboBoxItem Content="Mese"/>
+			</ComboBox>
+
+			<TextBlock Text="Értesítések:" Margin="0,10,0,0"/>
+			<CheckBox x:Name="chkHirlevel" Content="Hírlevél"/>
+			<CheckBox x:Name="chkSms" Content="SMS értesítés"/>
+
+			<TextBlock Text="Tagsági típus:" Margin="0,10,0,0"/>
+			<StackPanel Orientation="Horizontal">
+				<RadioButton x:Name="rbNormal" Content="Normál" IsChecked="True"/>
+				<RadioButton x:Name="rbDiak" Content="Diák" Margin="10,0,0,0"/>
+				<RadioButton x:Name="rbNyugdijas" Content="Nyugdíjas" Margin="10,0,0,0"/>
+			</StackPanel>
+
+			<Button x:Name="btnMentes" Content="Mentés" Width="120" Margin="0,15,0,0"
+                    Click="btnMentes_Click"/>
+
+			<TextBlock x:Name="tbUzenet" Foreground="Green" Margin="0,10,0,0"/>
+		</StackPanel>
+
+		<ListBox x:Name="lbOlvasok" Grid.Row="1" Margin="0,10,0,0"/>
 	</Grid>
 </Window>
